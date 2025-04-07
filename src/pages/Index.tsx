@@ -1,28 +1,11 @@
-
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import LoginForm from "@/components/auth/LoginForm";
-import { Battery } from "lucide-react";
+// Update this page (the content is just a fallback if you fail to update the page)
 
 const Index = () => {
-  const navigate = useNavigate();
-  
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      navigate("/map");
-    }
-  }, [navigate]);
-
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-b from-blue-50 to-white">
-      <div className="w-full max-w-md">
-        <div className="flex justify-center mb-8">
-          <div className="rounded-full bg-primary p-3">
-            <Battery className="h-8 w-8 text-white" />
-          </div>
-        </div>
-        <LoginForm />
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
+        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
       </div>
     </div>
   );
