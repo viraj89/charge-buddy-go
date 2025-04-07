@@ -1,5 +1,6 @@
 
 import LoginForm from "@/components/auth/LoginForm";
+import { Battery } from "lucide-react";
 
 const Login = () => {
   return (
